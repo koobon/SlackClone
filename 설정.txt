@@ -1,0 +1,5 @@
+npm i -g @nestjs/cli // nestjs 글로벌 설치
+nest new Nest >> 프로젝트 생성
+
+npm i --save @nestjs/config
+$ npm install --save @nestjs/swagger swagger-ui-express //스웨거  설치
