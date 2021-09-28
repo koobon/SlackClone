@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--IntroVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="IntroVC" id="BYZ-38-t0r" customClass="IntroVC" customModule="Slack_Clone_Pro" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UaG-oY-FR4">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Slack을 사용하면 어디서나 팀을 모을 수 있습니다." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tvd-ea-2ya">
+                                        <rect key="frame" x="30" y="40" width="354" height="55"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="chZ-Qf-XHR">
+                                        <rect key="frame" x="30" y="743" width="354" height="45"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Mf-w8-3qM">
+                                                <rect key="frame" x="152.5" y="8" width="49" height="29"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                <state key="normal" title="시작하기">
+                                                    <color key="titleColor" name="MainPurple"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="5Mf-w8-3qM" firstAttribute="centerX" secondItem="chZ-Qf-XHR" secondAttribute="centerX" id="CMl-6U-dDT"/>
+                                            <constraint firstAttribute="height" constant="45" id="Ov8-5b-oza"/>
+                                            <constraint firstItem="5Mf-w8-3qM" firstAttribute="centerY" secondItem="chZ-Qf-XHR" secondAttribute="centerY" id="iSy-ib-d1m"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="chZ-Qf-XHR" secondAttribute="trailing" constant="30" id="CVp-TV-oaA"/>
+                                    <constraint firstAttribute="bottom" secondItem="chZ-Qf-XHR" secondAttribute="bottom" constant="30" id="DaT-gj-0bi"/>
+                                    <constraint firstItem="chZ-Qf-XHR" firstAttribute="leading" secondItem="UaG-oY-FR4" secondAttribute="leading" constant="30" id="I9N-6c-pCw"/>
+                                    <constraint firstItem="Tvd-ea-2ya" firstAttribute="leading" secondItem="UaG-oY-FR4" secondAttribute="leading" constant="30" id="URu-KK-i06"/>
+                                    <constraint firstAttribute="trailing" secondItem="Tvd-ea-2ya" secondAttribute="trailing" constant="30" id="WZu-UV-b4a"/>
+                                    <constraint firstItem="Tvd-ea-2ya" firstAttribute="top" secondItem="UaG-oY-FR4" secondAttribute="top" constant="40" id="lyT-uQ-q0d"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="MainPurple"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="UaG-oY-FR4" secondAttribute="bottom" id="2Dr-wF-eat"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UaG-oY-FR4" secondAttribute="trailing" id="6ae-7d-2l6"/>
+                            <constraint firstItem="UaG-oY-FR4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="dqK-Ra-tX0"/>
+                            <constraint firstItem="UaG-oY-FR4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xDW-0m-EFd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnLogin" destination="5Mf-w8-3qM" id="9qJ-hc-vqM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-332" y="130"/>
+        </scene>
+        <!--Social LoginVC-->
+        <scene sceneID="nlT-fL-gcD">
+            <objects>
+                <viewController storyboardIdentifier="SocialLoginVC" id="81w-54-c7m" customClass="SocialLoginVC" customModule="Slack_Clone_Pro" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XzL-WD-dXw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qxk-ih-S9O">
+                                <rect key="frame" x="0.0" y="536" width="414" height="360"/>
+                                <color key="backgroundColor" red="0.13725490196078433" green="0.14901960784313725" blue="0.16862745098039217" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="360" id="ZXK-NO-ZeR"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Z4e-le-sNT" appends="YES" id="PqM-5f-dQa"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ndq-Cv-4IV">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="536"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="ofz-I6-jba" appends="YES" id="Gr1-wE-CxH"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ao0-N6-Axj"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.42999999999999999" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="qxk-ih-S9O" secondAttribute="bottom" id="NTV-6M-sSh"/>
+                            <constraint firstItem="Ndq-Cv-4IV" firstAttribute="top" secondItem="XzL-WD-dXw" secondAttribute="top" id="XWD-E1-GGu"/>
+                            <constraint firstItem="qxk-ih-S9O" firstAttribute="leading" secondItem="Ao0-N6-Axj" secondAttribute="leading" id="drC-K1-26w"/>
+                            <constraint firstItem="Ndq-Cv-4IV" firstAttribute="leading" secondItem="Ao0-N6-Axj" secondAttribute="leading" id="fgd-Bp-w2I"/>
+                            <constraint firstItem="qxk-ih-S9O" firstAttribute="top" secondItem="Ndq-Cv-4IV" secondAttribute="bottom" id="ivF-C4-Tyr"/>
+                            <constraint firstItem="qxk-ih-S9O" firstAttribute="trailing" secondItem="Ao0-N6-Axj" secondAttribute="trailing" id="urI-mI-QAL"/>
+                            <constraint firstItem="Ao0-N6-Axj" firstAttribute="trailing" secondItem="Ndq-Cv-4IV" secondAttribute="trailing" id="vdM-PD-IdV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="panGesture" destination="Z4e-le-sNT" id="GcB-dA-kT1"/>
+                        <outlet property="slideMenuView" destination="qxk-ih-S9O" id="jhR-P4-suR"/>
+                        <outlet property="tapGesture" destination="ofz-I6-jba" id="BEw-DY-rqB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n9R-xl-ros" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" maximumNumberOfTouches="1" id="Z4e-le-sNT">
+                    <connections>
+                        <action selector="panAction:" destination="81w-54-c7m" id="Bzd-PM-DWW"/>
+                    </connections>
+                </panGestureRecognizer>
+                <tapGestureRecognizer id="ofz-I6-jba"/>
+            </objects>
+            <point key="canvasLocation" x="393" y="130"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="MainPurple">
+            <color red="0.33725490196078434" green="0.15294117647058825" blue="0.3529411764705882" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>
