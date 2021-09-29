@@ -38,11 +38,6 @@ export class UsersController {
     return user;
   }
 
-   @ApiResponse({
-    status: 200,
-    description: '성공',
-    type: UserDto,
-  })
   @ApiOperation({ summary: '회원가입' })
   @Post()
   async join(@Body() body: JoinRequestDto) {
