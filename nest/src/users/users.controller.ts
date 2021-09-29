@@ -38,11 +38,19 @@ export class UsersController {
     return user;
   }
 
+   @ApiResponse({
+    status: 200,
+    description: '성공',
+    type: UserDto,
+  })
   @ApiOperation({ summary: '회원가입' })
   @Post()
   async join(@Body() body: JoinRequestDto) {
     // throw new HttpException(body.email, 401);
-    await this.usersService.join(body.email, body.nickname, body.password);
+    const result = await this.usersService.join(body.email, body.nickname, body.password);
+    if(result){
+      return 'success';
+    }
   }
 
   @ApiResponse({

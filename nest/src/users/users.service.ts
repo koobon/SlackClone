@@ -32,8 +32,8 @@ export class UsersService {
       //이미 존재하는 유저
       throw new UnauthorizedException('이미 가입된 회원입니다.'); //401
     }
-
     const hashedPassword = await bcryptjs.hash(password, 12);
     await this.usersRepository.save({email, nickname, password:hashedPassword});
+    return true;
   }
 }
