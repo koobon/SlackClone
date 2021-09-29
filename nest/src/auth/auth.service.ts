@@ -1,8 +1,9 @@
-import { Injectable } from "../../node_modules/@nestjs/common";
-import bcryptjs from '../../node_modules/bcryptjs'
-import { Repository } from "typeorm";
-import { Users } from "src/entities/Users";
-import { InjectRepository } from "@nestjs/typeorm";
+import { Injectable } from '@nestjs/common/decorators';
+import bcryptjs from 'bcryptjs';
+import { Repository } from 'typeorm';
+import { Users } from 'src/entities/Users';
+import { InjectRepository } from '@nestjs/typeorm';
+
 
 @Injectable()
 export class AuthService {
@@ -13,14 +14,15 @@ export class AuthService {
     async validateUser(email: string, password: string){
         const user = await this.usersRepository.findOne({
             where: {email},
-            select:['email', 'password', 'nickname'],
-        })        
+            select:['id', 'email', 'password', 'nickname'],
+        })
+        console.log(user);
         if(!user){           
             return null;
         }        
         
-        const result = await bcryptjs.compareSync(password, user.password);
-        console.log(password);
+        const result = await bcryptjs.compare(password, user.password);
+        console.log(result);
         if(result){
             const {password, ...userWithoutPassword} = user;
             return userWithoutPassword;

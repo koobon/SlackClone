@@ -1,5 +1,6 @@
-import { ExecutionContext, Injectable } from "../../node_modules/@nestjs/common";
-import { AuthGuard } from "../../node_modules/@nestjs/passport";
+import { ExecutionContext } from 'nest/node_modules/@nestjs/common/interfaces';
+import { Injectable } from '@nestjs/common/decorators';
+import { AuthGuard } from '@nestjs/passport/dist';
 
 @Injectable()
 export class LocalAuthGuard extends AuthGuard('local'){

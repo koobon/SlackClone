@@ -1,4 +1,7 @@
-import { ArgumentsHost, Catch, ExceptionFilter, HttpException } from "../nest/node_modules/@nestjs/common";  
+// import { ArgumentsHost, Catch, ExceptionFilter, HttpException } from "../nest/node_modules/@nestjs/common";  
+import { ArgumentsHost, ExceptionFilter } from "nest/node_modules/@nestjs/common/interfaces";
+import { Catch } from "@nestjs/common/decorators";
+import { HttpException } from "@nestjs/common/exceptions";
 import { Response } from "express";
 
 @Catch(HttpException)

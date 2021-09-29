@@ -1,10 +1,11 @@
 import { NestFactory } from '@nestjs/core';
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
-import { ValidationPipe } from '../nest/node_modules/@nestjs/common';
+import { ValidationPipe } from '@nestjs/common/pipes';
 import { AppModule } from './app.module';
 import { HttpExceptionFilter } from './httpException.filter';
-import passport from './../node_modules/passport';
-
+import passport from 'passport';
+// import { HttpExceptionFilter } from './httpException.filter';
+// import passport from './../node_modules/passport';
 
 declare const module: any;
 

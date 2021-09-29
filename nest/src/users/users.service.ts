@@ -2,7 +2,7 @@ import { BadRequestException, HttpException, Injectable, UnauthorizedException }
 import { InjectRepository } from '@nestjs/typeorm';
 import { Users } from 'src/entities/Users';
 import { Repository } from 'typeorm';
-import bcryptjs from '../../node_modules/bcryptjs'
+import bcryptjs from 'bcryptjs';
 
 @Injectable()
 export class UsersService {
