@@ -30,7 +30,7 @@ import { AuthModule } from './auth/auth.module';
     WorkspacesModule,
     DmsModule,
     ChannelsModule,
-    TypeOrmModule.forFeature([Users]),
+    TypeOrmModule.forFeature([Users, WorkspaceMembers, ChannelMembers]),
     TypeOrmModule.forRoot({
       type:'mysql',
       host:'localhost',
